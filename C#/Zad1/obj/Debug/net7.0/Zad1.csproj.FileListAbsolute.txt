@@ -1,0 +1,14 @@
+/Users/lezansp/Desktop/UJ/C#/Zad1/bin/Debug/net7.0/Zad1
+/Users/lezansp/Desktop/UJ/C#/Zad1/bin/Debug/net7.0/Zad1.deps.json
+/Users/lezansp/Desktop/UJ/C#/Zad1/bin/Debug/net7.0/Zad1.runtimeconfig.json
+/Users/lezansp/Desktop/UJ/C#/Zad1/bin/Debug/net7.0/Zad1.dll
+/Users/lezansp/Desktop/UJ/C#/Zad1/bin/Debug/net7.0/Zad1.pdb
+/Users/lezansp/Desktop/UJ/C#/Zad1/obj/Debug/net7.0/Zad1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lezansp/Desktop/UJ/C#/Zad1/obj/Debug/net7.0/Zad1.AssemblyInfoInputs.cache
+/Users/lezansp/Desktop/UJ/C#/Zad1/obj/Debug/net7.0/Zad1.AssemblyInfo.cs
+/Users/lezansp/Desktop/UJ/C#/Zad1/obj/Debug/net7.0/Zad1.csproj.CoreCompileInputs.cache
+/Users/lezansp/Desktop/UJ/C#/Zad1/obj/Debug/net7.0/Zad1.dll
+/Users/lezansp/Desktop/UJ/C#/Zad1/obj/Debug/net7.0/refint/Zad1.dll
+/Users/lezansp/Desktop/UJ/C#/Zad1/obj/Debug/net7.0/Zad1.pdb
+/Users/lezansp/Desktop/UJ/C#/Zad1/obj/Debug/net7.0/Zad1.genruntimeconfig.cache
+/Users/lezansp/Desktop/UJ/C#/Zad1/obj/Debug/net7.0/ref/Zad1.dll
