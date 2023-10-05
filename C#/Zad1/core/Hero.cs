@@ -7,12 +7,13 @@ enum EHeroClass
 
 class Hero
 {
-    public string name {get; set; }
-    public EHeroClass heroClass {get; set;}
+    public string Name { get; set; }
+
+    public EHeroClass HeroClass { get; set; }
 
     public Hero(string name, EHeroClass heroClass)
     {
-        this.name = name;
-        this.heroClass = heroClass;
+        this.Name = name;
+        this.HeroClass = heroClass;
     }
 }

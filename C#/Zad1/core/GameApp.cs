@@ -1,8 +1,20 @@
+using System.Data;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 
 public class GameApp
 {
+    List<Location> locations;
+    Location currentLocation;
+
+    // list of locations with players
+    Dictionary<string, string[]> locPlayMap = new Dictionary<string, string[]>
+    {
+        {"Calimport", new[] {"Akara", "Charsi"}},
+        {"Neverwinter", new[] {"Deckard Cain", "Gheed"}},
+        {"Silverymoon", new[] {"Kashya", "Warriv"}}
+    };
+
     public GameApp() {}
 
     public void Run()
@@ -31,26 +43,29 @@ public class GameApp
 
     private void initMenu()
     {
-        Console.WriteLine("Witaj w grze Herosi");
-        Console.WriteLine("[1] Zacznij nową grę");
-        Console.WriteLine("[X] Zamknij program");
+        Console.WriteLine("Welcome to Heros game");
+        Console.WriteLine("[1] Begin new game");
+        Console.WriteLine("[X] Close program");
     }
 
     private void startGame()
     {
         Console.Clear();
         Hero hero = generateHero();
-        
 
-        Console.ReadKey();
+        Console.WriteLine($"{hero.HeroClass} {hero.Name} is ready for an adventure!");
+
+        generateLocations();
+        currentLocation = locations[0];
+
+        startDialog();
     }
 
     private Hero generateHero()
     {
         string characterName = askForCharacterName();
-        Console.WriteLine($"Hello {characterName}.");
+        Console.WriteLine($"Hello {characterName}");
         EHeroClass heroClass = askForCharacterClass();
-
         return new Hero(characterName, heroClass);
     }
 
@@ -90,6 +105,67 @@ public class GameApp
             }
         }
         return heroClass;
+    }
+
+    void startDialog()
+    {
+        initDialogMenu(currentLocation);
+
+        int choiceInt;
+        while(true)
+        {
+            Console.WriteLine("Choice: ");
+            string? choice = Console.ReadLine();
+
+            if(choice == "X")
+            {
+                Environment.Exit(1);
+            }
+
+            if(String.IsNullOrEmpty(choice) || !int.TryParse(choice, out _))
+            {
+                continue;
+            }
+
+            choiceInt = Int32.Parse(choice);
+            if(choiceInt < 1 || choiceInt > currentLocation.NPCList.Count)
+            {
+                continue;
+            }
+            break;
+        }
+        // here we have a guarantee that NPC number is valid
+        talkTo(currentLocation.NPCList[choiceInt-1]);
+    }
+
+    void initDialogMenu(Location location)
+    {
+        Console.Clear();
+        Console.WriteLine($"You are in {location.Name}. What do you want to do?");
+
+        for(int i=0; i<location.NPCList.Count; ++i) {
+            string NPCName = location.NPCList[i+1].Name;
+            Console.WriteLine($"[{i+1}] Speak to {NPCName}");
+        }
+        Console.WriteLine($"[X] Close program");
+    }
+
+    void generateLocations()
+    {
+        foreach(var key in locPlayMap.Keys)
+        {
+            List<NonPlayerCharacter> playersList = new List<NonPlayerCharacter>();
+            foreach(string playerName in locPlayMap[key])
+            {
+                playersList.Add(new NonPlayerCharacter(playerName));
+            }
+            locations.Add(new Location(key, playersList));
+        }
+    }
+
+    void talkTo(NonPlayerCharacter npc)
+    {
+
     }
 
     public static void removeWhitespace(ref string input)
