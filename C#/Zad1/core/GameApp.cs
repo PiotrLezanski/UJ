@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 public class GameApp
 {
     List<Location> locations;
-    Location currentLocation;
+    Location? currentLocation;
 
     // list of locations with players
     Dictionary<string, string[]> locPlayMap = new Dictionary<string, string[]>
@@ -15,7 +15,10 @@ public class GameApp
         {"Silverymoon", new[] {"Kashya", "Warriv"}}
     };
 
-    public GameApp() {}
+    public GameApp() 
+    {
+        locations = new List<Location>();
+    }
 
     public void Run()
     {
@@ -57,6 +60,11 @@ public class GameApp
 
         generateLocations();
         currentLocation = locations[0];
+
+        if(currentLocation == null)
+        {
+            return;
+        }
 
         startDialog();
     }
@@ -144,7 +152,7 @@ public class GameApp
         Console.WriteLine($"You are in {location.Name}. What do you want to do?");
 
         for(int i=0; i<location.NPCList.Count; ++i) {
-            string NPCName = location.NPCList[i+1].Name;
+            string NPCName = location.NPCList[i].Name;
             Console.WriteLine($"[{i+1}] Speak to {NPCName}");
         }
         Console.WriteLine($"[X] Close program");
