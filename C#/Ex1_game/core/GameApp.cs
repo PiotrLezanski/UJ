@@ -12,7 +12,7 @@ public class GameApp
     // list of locations with players
     readonly Dictionary<string, Player[]> locPlayMap = new Dictionary<string, Player[]>
     {
-        {"Calimport", new[] {new Player("Akara", Dialogs.Dialog1), new Player("Akara", Dialogs.Dialog1)}},
+        {"Calimport", new[] {new Player("Akara", Dialogs.Dialog1), new Player("Charsi", Dialogs.Dialog1)}},
         {"Neverwinter", new[] {new Player("Deckard Cain", Dialogs.Dialog1), new Player("Gheed", Dialogs.Dialog1)}},
         {"Silverymoon", new[] {new Player("Kashya", Dialogs.Dialog1), new Player("Warriv", Dialogs.Dialog1)}}
     };
@@ -55,10 +55,9 @@ public class GameApp
 
     private void StartGame()
     {
-        Console.Clear();
         hero = GenerateHero();
-
-        Console.WriteLine($"{hero.HeroClass} {hero.Name} is ready for an adventure!");
+        Console.Clear();
+        Console.WriteLine($"{hero.HeroClass.ToString()} {hero.Name} is ready for an adventure!");
 
         GenerateLocations();
         currentLocation = locations[0];
@@ -73,6 +72,7 @@ public class GameApp
 
     private Hero GenerateHero()
     {
+        Console.Clear();
         string characterName = AskForCharacterName();
         Console.WriteLine($"Hello {characterName}");
         EHeroClass heroClass = AskForCharacterClass();
@@ -150,7 +150,6 @@ public class GameApp
 
     void InitDialogMenu(Location location)
     {
-        Console.Clear();
         Console.WriteLine($"You are in {location.Name}. What do you want to do?");
 
         for(int i=0; i<location.NPCList.Count; ++i) {
@@ -193,7 +192,7 @@ public class GameApp
 
             while(true)
             {
-                Console.WriteLine("Choice: ");
+                Console.Write("Choice: ");
                 string? choice = Console.ReadLine();
                 int choiceInt = Int32.Parse(choice);
                 if(String.IsNullOrEmpty(choice) || choiceInt < 1 || choiceInt > dialog.HeroDialogParts.Count)
@@ -202,7 +201,8 @@ public class GameApp
                 }
 
                 // choice is valid
-                Console.WriteLine(parser.ParseDialog(dialog.HeroDialogParts[choiceInt]));
+                Console.WriteLine(parser.ParseDialog(dialog.HeroDialogParts[choiceInt-1]));
+                break;
             }
         }
     }
