@@ -1,0 +1,14 @@
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/bin/Debug/net7.0/Ex2_parlament
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/bin/Debug/net7.0/Ex2_parlament.deps.json
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/bin/Debug/net7.0/Ex2_parlament.runtimeconfig.json
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/bin/Debug/net7.0/Ex2_parlament.dll
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/bin/Debug/net7.0/Ex2_parlament.pdb
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/obj/Debug/net7.0/Ex2_parlament.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/obj/Debug/net7.0/Ex2_parlament.AssemblyInfoInputs.cache
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/obj/Debug/net7.0/Ex2_parlament.AssemblyInfo.cs
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/obj/Debug/net7.0/Ex2_parlament.csproj.CoreCompileInputs.cache
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/obj/Debug/net7.0/Ex2_parlament.dll
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/obj/Debug/net7.0/refint/Ex2_parlament.dll
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/obj/Debug/net7.0/Ex2_parlament.pdb
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/obj/Debug/net7.0/Ex2_parlament.genruntimeconfig.cache
+/Users/lezansp/Desktop/UJ/C#/Ex2_parlament/obj/Debug/net7.0/ref/Ex2_parlament.dll
