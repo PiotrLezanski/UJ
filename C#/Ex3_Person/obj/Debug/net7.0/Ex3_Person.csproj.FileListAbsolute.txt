@@ -1,0 +1,14 @@
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/bin/Debug/net7.0/Ex3_Person
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/bin/Debug/net7.0/Ex3_Person.deps.json
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/bin/Debug/net7.0/Ex3_Person.runtimeconfig.json
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/bin/Debug/net7.0/Ex3_Person.dll
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/bin/Debug/net7.0/Ex3_Person.pdb
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/obj/Debug/net7.0/Ex3_Person.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/obj/Debug/net7.0/Ex3_Person.AssemblyInfoInputs.cache
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/obj/Debug/net7.0/Ex3_Person.AssemblyInfo.cs
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/obj/Debug/net7.0/Ex3_Person.csproj.CoreCompileInputs.cache
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/obj/Debug/net7.0/Ex3_Person.dll
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/obj/Debug/net7.0/refint/Ex3_Person.dll
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/obj/Debug/net7.0/Ex3_Person.pdb
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/obj/Debug/net7.0/Ex3_Person.genruntimeconfig.cache
+/Users/lezansp/Desktop/UJ/C#/Ex3_Person/obj/Debug/net7.0/ref/Ex3_Person.dll
