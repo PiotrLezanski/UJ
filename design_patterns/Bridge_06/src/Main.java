@@ -12,5 +12,8 @@ public class Main
         vehicle2.paint();
         vehicle2.polish();
         vehicle2.removeDents();
+
+        vehicle1.release();
+        vehicle2.release();
     }
 }

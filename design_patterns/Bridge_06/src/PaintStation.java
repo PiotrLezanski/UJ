@@ -2,6 +2,11 @@ import java.awt.*;
 
 abstract public class PaintStation
 {
+    public void releaseVehicle()
+    {
+        System.out.println("The vehicle is released");
+    }
+
     abstract public void paintWork();
     abstract public void polishWork();
     abstract public void removeDentsWork();
