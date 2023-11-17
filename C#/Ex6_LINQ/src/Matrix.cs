@@ -16,8 +16,8 @@ namespace MatrixSum
                                 .Select(_ => rand.Next(1000)))
                     .ToList();
 
-            List<List<int>> matrix = Enumerable.Range(1, n)
-                                    .Select(x => )
+            var flattenSeq = seq.SelectMany(x => x)
+                            .Sum();
         }
     }
 }
