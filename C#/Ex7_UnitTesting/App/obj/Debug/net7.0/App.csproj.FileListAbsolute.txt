@@ -1,0 +1,14 @@
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/bin/Debug/net7.0/App
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/bin/Debug/net7.0/App.deps.json
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/bin/Debug/net7.0/App.runtimeconfig.json
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/bin/Debug/net7.0/App.dll
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/bin/Debug/net7.0/App.pdb
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/obj/Debug/net7.0/App.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/obj/Debug/net7.0/App.AssemblyInfoInputs.cache
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/obj/Debug/net7.0/App.AssemblyInfo.cs
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/obj/Debug/net7.0/App.csproj.CoreCompileInputs.cache
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/obj/Debug/net7.0/App.dll
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/obj/Debug/net7.0/refint/App.dll
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/obj/Debug/net7.0/App.pdb
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/obj/Debug/net7.0/App.genruntimeconfig.cache
+/Users/lezansp/Desktop/UJ/C#/Ex7_UnitTesting/App/obj/Debug/net7.0/ref/App.dll
