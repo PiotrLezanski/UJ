@@ -1,4 +1,5 @@
 public interface ShapeCreator 
 {
-    Shape factory();
+    Shape createSmallShape();
+    Shape createBigShape();
 }

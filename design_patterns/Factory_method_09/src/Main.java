@@ -2,8 +2,10 @@ public class Main
 {
     public static void main(String[] args) 
     {
-        Shape rectangle = new RectangleCreator().factory();
-        Shape triangle = new TriangleCreator().factory();
-        Shape square = new SquareCreator().factory();
-    }
+        Shape smallTriangle = new TriangleCreator().createSmallShape();
+        smallTriangle.draw();
+        
+        Shape bigSquare = new SquareCreator().createBigShape();
+        bigSquare.draw();
+    }       
 }

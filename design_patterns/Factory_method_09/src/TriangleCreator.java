@@ -1,7 +1,12 @@
 public class TriangleCreator implements ShapeCreator
 {
     @Override
-    public Shape factory() {
-        return new Triangle(4, 5);
+    public Shape createSmallShape() {
+        return new SmallTriangle(2, 4);
+    }
+
+    @Override
+    public Shape createBigShape() {
+        return new BigTriangle(1, 6);
     }
 }
