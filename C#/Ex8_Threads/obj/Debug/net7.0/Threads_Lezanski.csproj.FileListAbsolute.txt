@@ -1,0 +1,14 @@
+/Users/lezansp/Desktop/priv/Threads_Lezanski/obj/Debug/net7.0/Threads_Lezanski.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lezansp/Desktop/priv/Threads_Lezanski/obj/Debug/net7.0/Threads_Lezanski.AssemblyInfoInputs.cache
+/Users/lezansp/Desktop/priv/Threads_Lezanski/obj/Debug/net7.0/Threads_Lezanski.AssemblyInfo.cs
+/Users/lezansp/Desktop/priv/Threads_Lezanski/obj/Debug/net7.0/Threads_Lezanski.csproj.CoreCompileInputs.cache
+/Users/lezansp/Desktop/priv/Threads_Lezanski/bin/Debug/net7.0/Threads_Lezanski
+/Users/lezansp/Desktop/priv/Threads_Lezanski/bin/Debug/net7.0/Threads_Lezanski.deps.json
+/Users/lezansp/Desktop/priv/Threads_Lezanski/bin/Debug/net7.0/Threads_Lezanski.runtimeconfig.json
+/Users/lezansp/Desktop/priv/Threads_Lezanski/bin/Debug/net7.0/Threads_Lezanski.dll
+/Users/lezansp/Desktop/priv/Threads_Lezanski/bin/Debug/net7.0/Threads_Lezanski.pdb
+/Users/lezansp/Desktop/priv/Threads_Lezanski/obj/Debug/net7.0/Threads_Lezanski.dll
+/Users/lezansp/Desktop/priv/Threads_Lezanski/obj/Debug/net7.0/refint/Threads_Lezanski.dll
+/Users/lezansp/Desktop/priv/Threads_Lezanski/obj/Debug/net7.0/Threads_Lezanski.pdb
+/Users/lezansp/Desktop/priv/Threads_Lezanski/obj/Debug/net7.0/Threads_Lezanski.genruntimeconfig.cache
+/Users/lezansp/Desktop/priv/Threads_Lezanski/obj/Debug/net7.0/ref/Threads_Lezanski.dll
