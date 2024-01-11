@@ -1,0 +1,14 @@
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/bin/Debug/net7.0/Ex5_Complex
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/bin/Debug/net7.0/Ex5_Complex.deps.json
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/bin/Debug/net7.0/Ex5_Complex.runtimeconfig.json
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/bin/Debug/net7.0/Ex5_Complex.dll
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/bin/Debug/net7.0/Ex5_Complex.pdb
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/obj/Debug/net7.0/Ex5_Complex.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/obj/Debug/net7.0/Ex5_Complex.AssemblyInfoInputs.cache
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/obj/Debug/net7.0/Ex5_Complex.AssemblyInfo.cs
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/obj/Debug/net7.0/Ex5_Complex.csproj.CoreCompileInputs.cache
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/obj/Debug/net7.0/Ex5_Complex.dll
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/obj/Debug/net7.0/refint/Ex5_Complex.dll
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/obj/Debug/net7.0/Ex5_Complex.pdb
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/obj/Debug/net7.0/Ex5_Complex.genruntimeconfig.cache
+/Users/lezansp/Desktop/UJ/C#/Ex5_Complex/obj/Debug/net7.0/ref/Ex5_Complex.dll

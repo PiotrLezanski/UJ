@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Ex5_Complex/1.0.0": {
+        "runtime": {
+          "Ex5_Complex.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ex5_Complex/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

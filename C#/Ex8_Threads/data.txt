@@ -1,0 +1,46 @@
+Kraj;Adres 
+Armenia;ftp.am.debian.org
+Australia;ftp.au.debian.org
+Austria;ftp.at.debian.org
+Belgia;ftp.be.debian.org 
+Białoruś;ftp.by.debian.org
+Brazylia;ftp.br.debian.org
+Bułgaria;ftp.bg.debian.org
+Chile;ftp.cl.debian.org
+Chiny;ftp2.cn.debian.org 
+Chiny;ftp.cn.debian.org
+Chorwacja;ftp.hr.debian.org
+Czechy;ftp.cz.debian.org
+Dania;ftp.dk.debian.org
+Estonia;ftp.ee.debian.org
+Francja;ftp.fr.debian.org
+Grecja;ftp.gr.debian.org
+Hiszpania;ftp.es.debian.org
+Holandia;ftp.nl.debian.org
+Hongkong;ftp.hk.debian.org
+Japonia;ftp.jp.debian.org
+Kanada;ftp.ca.debian.org
+Korea;ftp.kr.debian.org
+Litwa;ftp.lt.debian.org
+Mołdawia;ftp.md.debian.org
+Niemcy;ftp2.de.debian.org
+Niemcy;ftp.de.debian.org
+Norwegia;ftp.no.debian.org
+Nowa Kaledonia;ftp.nc.debian.org
+Nowa Zelandia;ftp.nz.debian.org
+Polska;ftp.pl.debian.org
+Portugalia;ftp.pt.debian.org
+Rosja;ftp.ru.debian.org
+Salwador;ftp.sv.debian.org
+Słowacja;ftp.sk.debian.org
+Słowenia;ftp.si.debian.org
+Stany Zjednoczone;ftp.us.debian.org
+Szwajcaria;ftp.ch.debian.org
+Szwecja;ftp.fi.debian.org
+Szwecja;ftp.se.debian.org
+Tajwan;ftp.tw.debian.org
+Turcja;ftp.tr.debian.org
+Węgry;ftp.hu.debian.org
+Włochy;ftp.it.debian.org
+Wielka Brytania;ftp.is.debian.org
+Wielka Brytania;ftp.uk.debian.org

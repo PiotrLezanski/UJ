@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{F8C3F918-8E68-4933-9B55-FB8BA6984C36}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.App PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UnitTests/StringMergerUnitTests.cs">
+    <Files>
+      <File FileName="UnitTests/UnitTest1.cs" Line="29" Column="11" />
+      <File FileName="App/src/Calculator.cs" Line="12" Column="10" />
+      <File FileName="App/src/EmptyClass.cs" Line="7" Column="1" />
+      <File FileName="App/src/IStringMerger.cs" Line="5" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Ex7_UnitTesting" expanded="True">
+            <Node name="App">
+              <Node name="src" expanded="True" />
+            </Node>
+            <Node name="UnitTests">
+              <Node name="StringMergerUnitTests.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Ex7_UnitTesting" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
