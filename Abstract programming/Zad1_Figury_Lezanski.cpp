@@ -1,13 +1,7 @@
 #include <iostream>
 #include <array>
 #include <cmath>
-
-/*
-Plansza jest domyslnie wielkosci 20x20.
-
-Prosze spojrzec w przykladowego maina by zobaczyc sposob uzywania.
-Pobieranie inputu z konsoli i budowanie menu wyboru figury uznalem za trywialne i niewarte implementacji.
-*/
+#include <utility>
 
 class Canvas
 {
@@ -87,13 +81,21 @@ private:
 class Line
 {
 public:
+    Line(const Point& start, const Point& stop)
+    {
+        set_start(start);
+        set_stop(stop);
+    }
+    
     void set_start(const Point& point);
+    const Point& get_start_point() const { return startPoint; }
     void set_stop(const Point& point);
+    const Point& get_stop_point() const { return stopPoint; }
     bool is_point() { return startPoint == stopPoint; }
     
 private:
-    Point startPoint;
-    Point stopPoint;
+    Point startPoint{1,1};
+    Point stopPoint{1,1};
 };
 
 void Line::set_start(const Point& point)
@@ -131,14 +133,19 @@ public:
     void set_color(char _color) { color = _color; }
     [[nodiscard]] const Point& get_position();
     
-    void move(const Line& vector);
+    void move(const Line& vector, Canvas& canvas);
+    
+private:
+    std::pair<int, int> get_vertical_horizontal_shift(const Line& vector);
     
 protected:
     uint16_t height = 0;
     uint16_t width = 0;
-    bool alreadyOnCanvas = false;
-    char color = Canvas::CANVAS_DEFAULT_COLOR;
     Point startPoint{0,0};
+    char color = Canvas::CANVAS_DEFAULT_COLOR;
+    
+private:
+    bool alreadyOnCanvas = false;
 };
 
 void Figure::clear_drawing(Canvas& canvas)
@@ -163,9 +170,22 @@ const Point& Figure::get_position()
                std::min(Canvas::CANVAS_HEIGHT, (uint16_t)(startPoint.getX()+height)));
 }
 
-void Figure::move(const Line& vector)
+std::pair<int, int> Figure::get_vertical_horizontal_shift(const Line& vector)
 {
+    const Point& startPoint = vector.get_start_point();
+    const Point& stopPoint = vector.get_stop_point();
     
+    return std::make_pair(stopPoint.getX()-startPoint.getX(), stopPoint.getY()-startPoint.getY());
+}
+
+void Figure::move(const Line& vector, Canvas& canvas)
+{
+    std::pair<int, int> shift = get_vertical_horizontal_shift(vector);
+    
+    char temp_color = color;
+    draw(canvas, Canvas::CANVAS_EMPTY_SPACE);
+    set_start_point(Point(startPoint.getX()+shift.first, startPoint.getY()+shift.second));
+    draw(canvas, temp_color);
 }
 ////////////////////////////////////////////
 
@@ -187,8 +207,11 @@ public:
     }
 };
 
-void Square::draw(Canvas& canvas, char color)
+void Square::draw(Canvas& canvas, char color_)
 {
+    if(color != color_)
+        set_color(color_);
+    
     uint16_t startX = startPoint.getX();
     uint16_t startY = startPoint.getY();
     
@@ -197,7 +220,7 @@ void Square::draw(Canvas& canvas, char color)
     
     for(int i = startX; i<endX; ++i)
         for(int j = startY; j<endY; ++j)
-            canvas.get_canvas2d()[i][j] = color;
+            canvas.get_canvas2d()[i][j] = color_;
 }
 ////////////////////////////////////////////
 
@@ -207,8 +230,11 @@ public:
     void draw(Canvas& canvas, char color = Canvas::CANVAS_DEFAULT_COLOR) override;
 };
 
-void Rectangle::draw(Canvas& canvas, char color)
+void Rectangle::draw(Canvas& canvas, char color_)
 {
+    if(color != color_)
+        set_color(color_);
+    
     uint16_t startX = startPoint.getX();
     uint16_t startY = startPoint.getY();
     
@@ -217,7 +243,7 @@ void Rectangle::draw(Canvas& canvas, char color)
     
     for(int i = startX; i<endX; ++i)
         for(int j = startY; j<endY; ++j)
-            canvas.get_canvas2d()[i][j] = color;
+            canvas.get_canvas2d()[i][j] = color_;
 }
 ////////////////////////////////////////////
 
@@ -231,8 +257,11 @@ public:
     void set_width(uint16_t _width) override;
 };
 
-void QuarterSquareTriangle::draw(Canvas& canvas, char color)
+void QuarterSquareTriangle::draw(Canvas& canvas, char color_)
 {
+    if(color != color_)
+        set_color(color_);
+    
     uint16_t startX = startPoint.getX();
     uint16_t startY = startPoint.getY();
     
@@ -245,7 +274,7 @@ void QuarterSquareTriangle::draw(Canvas& canvas, char color)
     {
         for(int j=startY; j<endY-2*counter; ++j)
         {
-            canvas.get_canvas2d()[i][j+counter] = color;
+            canvas.get_canvas2d()[i][j+counter] = color_;
         }
         ++counter;
     }
@@ -274,8 +303,11 @@ public:
     void set_width(uint16_t _width) override;
 };
 
-void HalfSquareTriangle::draw(Canvas& canvas, char color)
+void HalfSquareTriangle::draw(Canvas& canvas, char color_)
 {
+    if(color != color_)
+        set_color(color_);
+    
     uint16_t startX = startPoint.getX();
     uint16_t startY = startPoint.getY();
     
@@ -284,7 +316,7 @@ void HalfSquareTriangle::draw(Canvas& canvas, char color)
     
     for(int i = startX; i<endX; ++i)
         for(int j = startY; j<=i+startY-startX; ++j)
-            canvas.get_canvas2d()[i][j] = color;
+            canvas.get_canvas2d()[i][j] = color_;
 }
 
 void HalfSquareTriangle::set_height(uint16_t _height)
@@ -306,8 +338,11 @@ int main()
     
     Square square;
     square.set_width(5);
-    square.set_start_point(Point(2,2));
+    square.set_start_point(Point(1,1));
     square.draw(canvas);
+    
+    Line line(Point(1,2), Point(3,3));
+    square.move(line, canvas);
     
     Rectangle rectangle;
     rectangle.set_height(2);
